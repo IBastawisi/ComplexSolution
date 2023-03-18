@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexLibrary", "ComplexLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexConsole", "ComplexConsole\ComplexConsole.csproj", "{C124840C-52FA-4C98-926A-A95553EDAC79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexApi", "ComplexApi\ComplexApi.csproj", "{EA41048B-2D68-46E6-AF10-FD95773EC025}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C124840C-52FA-4C98-926A-A95553EDAC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C124840C-52FA-4C98-926A-A95553EDAC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C124840C-52FA-4C98-926A-A95553EDAC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

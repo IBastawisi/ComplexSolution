@@ -1,4 +1,5 @@
 ﻿namespace ComplexLibrary;
+
 public class ComplexNumber
 {
   public double Real { get; set; }
@@ -13,34 +14,29 @@ public class ComplexNumber
     return $"{Real} + {Imaginary}i";
   }
 
-  public static ComplexNumber? TryParse(string s)
+  public static ComplexNumber TryParse(string? input)
   {
-    if (String.IsNullOrEmpty(s))
+    var result = new ComplexNumber(0, 0);
+    if (string.IsNullOrEmpty(input))
     {
-      return null;
+      return result;
     }
 
-    string[] parts = s.Split(new char[] { '+', '-' }, StringSplitOptions.RemoveEmptyEntries);
+    string[] parts = input.Split(new char[] { '+', '-' }, StringSplitOptions.RemoveEmptyEntries);
 
-    if (parts.Length != 2)
+    result.Real = Convert.ToDouble(parts[0]);
+    if (parts.Length == 1)
     {
-      return null;
-    }
-    if (!double.TryParse(parts[0], out double real))
-    {
-      return null;
-    }
-    if (!double.TryParse(parts[1].TrimEnd('i'), out double imaginary))
-    {
-      return null;
+      return result;
     }
 
-    if (s.Contains('-'))
+    result.Imaginary = Convert.ToDouble(parts[1].TrimEnd('i'));
+    if (input.Contains('-'))
     {
-      imaginary = -imaginary;
+      result.Imaginary *= -1;
     }
 
-    return new ComplexNumber(real, imaginary);
+    return result;
   }
 
   public static ComplexNumber operator +(ComplexNumber a, ComplexNumber b)
