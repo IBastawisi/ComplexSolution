@@ -15,4 +15,9 @@
     <ProjectReference Include="..\ComplexLibrary\ComplexLibrary.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
 </Project>
