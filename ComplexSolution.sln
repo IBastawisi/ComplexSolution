@@ -3,19 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexLibrary", "ComplexLibrary\ComplexLibrary.csproj", "{6838E66F-8B30-4EBC-AAD6-DB8781874EBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexLibrary", "ComplexLibrary\ComplexLibrary.csproj", "{6838E66F-8B30-4EBC-AAD6-DB8781874EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexConsole", "ComplexConsole\ComplexConsole.csproj", "{C124840C-52FA-4C98-926A-A95553EDAC79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexConsole", "ComplexConsole\ComplexConsole.csproj", "{C124840C-52FA-4C98-926A-A95553EDAC79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexApi", "ComplexApi\ComplexApi.csproj", "{EA41048B-2D68-46E6-AF10-FD95773EC025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexApi", "ComplexApi\ComplexApi.csproj", "{EA41048B-2D68-46E6-AF10-FD95773EC025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexWinForms", "ComplexWinForms\ComplexWinForms.csproj", "{2C024823-1B0F-4C95-A620-3BC40011CA81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6838E66F-8B30-4EBC-AAD6-DB8781874EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +29,15 @@ Global
 		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA41048B-2D68-46E6-AF10-FD95773EC025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C024823-1B0F-4C95-A620-3BC40011CA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C024823-1B0F-4C95-A620-3BC40011CA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C024823-1B0F-4C95-A620-3BC40011CA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C024823-1B0F-4C95-A620-3BC40011CA81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A91687B-418F-45C0-800F-9DDD5C3FFD99}
 	EndGlobalSection
 EndGlobal
